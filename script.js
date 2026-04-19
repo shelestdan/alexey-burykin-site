@@ -97,7 +97,7 @@
 
   // --- reveal on scroll (with stagger) ----------------------------------
   var revealTargets = document.querySelectorAll(
-    '.section__head, .diag-card, .fail-card, .work-card, .method-list li, .split__col, .econ-card, .dash__panel, .dash__copy, .case, .fit-col, .format-card, .faq__item, .about-head, .about-copy, .about-media, .about-principle, .pull, .contact-copy, .contact-form, .portrait-badge'
+    '.section__head, .diag-card, .fail-card, .bflow, .benefits__aside, .method-list li, .fit-col, .format-card, .faq__item, .about-head, .about-copy, .about-media, .about-principle, .qual-card, .quiz__step, .quiz__result-card, .contact-copy, .contact-form, .portrait-badge'
   );
   revealTargets.forEach(function (el) { el.classList.add('reveal'); });
 
@@ -149,24 +149,6 @@
       });
     }, { threshold: 0.4 });
     counters.forEach(function (c) { cio.observe(c); });
-  }
-
-  // --- mouse-follow glow on cards ---------------------------------------
-  var glowCards = document.querySelectorAll('.work-card');
-  if (!reduce) {
-    glowCards.forEach(function (card) {
-      card.addEventListener('mousemove', function (e) {
-        var rect = card.getBoundingClientRect();
-        var x = ((e.clientX - rect.left) / rect.width) * 100;
-        var y = ((e.clientY - rect.top) / rect.height) * 100;
-        card.style.setProperty('--mx', x + '%');
-        card.style.setProperty('--my', y + '%');
-      });
-      card.addEventListener('mouseleave', function () {
-        card.style.removeProperty('--mx');
-        card.style.removeProperty('--my');
-      });
-    });
   }
 
   // --- magnetic primary CTAs --------------------------------------------
@@ -402,22 +384,6 @@
     window.addEventListener('resize', updateRail);
   }
 
-  // --- manifest per-line reveal -----------------------------------------
-  var manifestTitle = document.querySelector('.manifest__title');
-  if (manifestTitle && 'IntersectionObserver' in window) {
-    var mio = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) {
-          e.target.classList.add('is-in');
-          mio.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.3 });
-    mio.observe(manifestTitle);
-  } else if (manifestTitle) {
-    manifestTitle.classList.add('is-in');
-  }
-
   // --- parallax on elements with data-parallax --------------------------
   var parallaxEls = document.querySelectorAll('[data-parallax]');
   if (parallaxEls.length && !reduce && window.matchMedia('(min-width: 768px)').matches) {
@@ -462,31 +428,8 @@
     });
   }
 
-  // --- dashboard bars: animate widths on reveal -------------------------
-  var dashPanel = document.querySelector('.dash__panel');
-  if (dashPanel && 'IntersectionObserver' in window && !reduce) {
-    dashPanel.querySelectorAll('.dash__bar i').forEach(function (bar) {
-      var target = bar.style.getPropertyValue('--w') || '50%';
-      bar.dataset.target = target;
-      bar.style.setProperty('--w', '0%');
-    });
-    var dashIo = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.querySelectorAll('.dash__bar i').forEach(function (bar, idx) {
-            setTimeout(function () {
-              bar.style.setProperty('--w', bar.dataset.target);
-            }, idx * 120);
-          });
-          dashIo.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.3 });
-    dashIo.observe(dashPanel);
-  }
-
   // --- QUIZ: progress + reveal result when all 3 answered ----------------
-  var quiz = document.getElementById('quiz');
+  var quiz = document.getElementById('quizForm');
   if (quiz) {
     var progressBar = quiz.querySelector('.quiz__progress-bar');
     var progressLabel = quiz.querySelector('.quiz__progress-label b');
