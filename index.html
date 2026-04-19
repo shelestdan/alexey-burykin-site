@@ -156,14 +156,21 @@
 <!-- Floating side-rail section indicator -->
 <aside class="rail" aria-label="Навигация по разделам">
   <ol class="rail__list">
+    <li class="rail__group-label" aria-hidden="true"><span>Контекст</span></li>
     <li><a href="#diagnosis" data-label="Ситуация"><span>01</span></a></li>
-    <li><a href="#work" data-label="Что делаю"><span>03</span></a></li>
-    <li><a href="#method" data-label="Метод"><span>04</span></a></li>
-    <li><a href="#team" data-label="Команда"><span>05</span></a></li>
-    <li><a href="#dashboards" data-label="Контур"><span>07</span></a></li>
-    <li><a href="#about" data-label="Обо мне"><span>10</span></a></li>
-    <li><a href="#format" data-label="Форматы"><span>11</span></a></li>
-    <li><a href="#contact" data-label="Контакт"><span>→</span></a></li>
+    <li><a href="#benefits" data-label="Что даёт сессия"><span>02</span></a></li>
+    <li class="rail__sep" aria-hidden="true"></li>
+    <li class="rail__group-label" aria-hidden="true"><span>Работа</span></li>
+    <li><a href="#method" data-label="Принципы"><span>03</span></a></li>
+    <li><a href="#fit" data-label="Кому подходит"><span>04</span></a></li>
+    <li class="rail__sep" aria-hidden="true"></li>
+    <li class="rail__group-label" aria-hidden="true"><span>Автор</span></li>
+    <li><a href="#about" data-label="Обо мне"><span>05</span></a></li>
+    <li><a href="#format" data-label="Форматы"><span>06</span></a></li>
+    <li class="rail__sep" aria-hidden="true"></li>
+    <li class="rail__group-label" aria-hidden="true"><span>Ответы</span></li>
+    <li><a href="#faq" data-label="Вопросы"><span>07</span></a></li>
+    <li><a href="#contact" data-label="Записаться"><span>→</span></a></li>
   </ol>
 </aside>
 
@@ -176,12 +183,10 @@
       <span class="brand-role">антикризисный управленец</span>
     </a>
     <nav class="nav__links" aria-label="Разделы страницы">
-      <a href="#diagnosis">Ситуация</a>
-      <a href="#work">Что я делаю</a>
-      <a href="#method">Метод</a>
-      <a href="#about">Обо мне</a>
-      <a href="#format">Форматы</a>
-      <a href="#faq">Вопросы</a>
+      <a href="#about">Обо&nbsp;мне</a>
+      <a href="#format">Формат&nbsp;работы</a>
+      <a href="#faq">Частые&nbsp;вопросы</a>
+      <a href="https://t.me/+ueCIK215zyQzYTYy" target="_blank" rel="noopener">Telegram-канал</a>
     </nav>
     <div class="nav__cta">
       <a class="btn btn--ghost" href="https://t.me/Mbobr1975" target="_blank" rel="noopener">Telegram</a>
@@ -193,12 +198,10 @@
     <div class="nav__progress" aria-hidden="true"><i></i></div>
   </div>
   <div class="nav__mobile" id="mobile-menu" hidden>
-    <a href="#diagnosis">Ситуация</a>
-    <a href="#work">Что я делаю</a>
-    <a href="#method">Метод</a>
     <a href="#about">Обо мне</a>
-    <a href="#format">Форматы</a>
-    <a href="#faq">Вопросы</a>
+    <a href="#format">Формат работы</a>
+    <a href="#faq">Частые вопросы</a>
+    <a href="https://t.me/+ueCIK215zyQzYTYy" target="_blank" rel="noopener">Telegram-канал</a>
     <a class="btn btn--primary btn--block" href="#contact">Записаться</a>
   </div>
 </header>
@@ -236,20 +239,20 @@
 
   <div class="container hero__row">
     <div class="hero__content">
-      <span class="eyebrow">Антикризисное управление · Практика · 25+ лет</span>
+      <span class="eyebrow">Пробная ментор-сессия · Алексей&nbsp;Бурыкин</span>
       <h1 class="hero__title" data-split>
-        Когда бизнес держится на&nbsp;собственнике&nbsp;—<br/>
-        это не&nbsp;рост. <span class="accent">Это точка&nbsp;отказа.</span>
+        Если&nbsp;бизнес держится только на&nbsp;вас&nbsp;—<br/>
+        это не&nbsp;рост. <span class="accent">Это ограничение.</span>
       </h1>
       <p class="hero__lede">
-        Вхожу в&nbsp;сложные управленческие ситуации. Нахожу, где компания теряет деньги, скорость и&nbsp;управляемость. Перестраиваю процессы, команду и&nbsp;контур&nbsp;контроля — от&nbsp;хаоса к&nbsp;системе, которая работает без вашего ручного режима.
+        Ментор-сессия для&nbsp;собственников и&nbsp;руководителей, у&nbsp;которых бизнес замкнулся на&nbsp;их&nbsp;личном участии. За&nbsp;30&nbsp;минут разбираем управленческую ситуацию и&nbsp;формулируем ключевой затык.
       </p>
       <div class="hero__cta">
         <a class="btn btn--primary btn--lg" href="#contact">
-          <span>Диагностическая сессия</span>
+          <span>Записаться на&nbsp;пробную сессию</span>
           <span class="btn__meta">30&nbsp;минут · онлайн · 0&nbsp;₽</span>
         </a>
-        <a class="btn btn--outline btn--lg" href="#work">Что&nbsp;я&nbsp;делаю</a>
+        <a class="btn btn--outline btn--lg" href="#about">Обо&nbsp;мне</a>
       </div>
       <dl class="hero__stats" aria-label="Опорные факты">
         <div><dt><span data-count="25">25</span>+&nbsp;лет</dt><dd>управленческой практики</dd></div>
@@ -333,94 +336,48 @@
   </div>
 </section>
 
-<!-- WHY STANDARD SOLUTIONS FAIL -->
-<section class="section section--dim">
+<!-- BENEFITS — что даёт первая встреча -->
+<section class="section section--dim" id="benefits">
   <div class="container">
     <header class="section__head">
       <span class="section__num">02</span>
-      <h2 class="section__title">Почему привычные решения не&nbsp;дают результата</h2>
+      <h2 class="section__title">Что даёт первая встреча</h2>
       <p class="section__lead">
-        Когда возникает системный затык, руководитель действует логично. Но&nbsp;проблема лежит глубже, чем инструменты.
+        Без&nbsp;обязательств продолжать. По&nbsp;итогам 30-минутной сессии вы&nbsp;получаете не&nbsp;советы, а&nbsp;управленческую оптику.
       </p>
     </header>
 
-    <div class="fail-grid">
-      <article class="fail-card">
-        <h3>Обучение и&nbsp;книги</h3>
-        <p>Знания появляются. Поведение системы остаётся прежним.</p>
-      </article>
-      <article class="fail-card">
-        <h3>Советы коллег</h3>
-        <p>Работают в&nbsp;их&nbsp;контексте. Ваш контекст — другой: структура, масштаб, зрелость команды.</p>
-      </article>
-      <article class="fail-card">
-        <h3>Найм «сильного управленца»</h3>
-        <p>Если архитектура управления не&nbsp;выстроена, новый человек встраивается в&nbsp;старую модель или вступает в&nbsp;конфликт с&nbsp;вами.</p>
-      </article>
-      <article class="fail-card">
-        <h3>Усиление контроля</h3>
-        <p>Даёт краткосрочную управляемость. Но&nbsp;закрепляет зависимость компании от&nbsp;вашего личного участия.</p>
-      </article>
-    </div>
-
-    <blockquote class="pull">
-      <p>Если ничего не&nbsp;менять, зависимость компании от&nbsp;вас будет только&nbsp;усиливаться.</p>
-    </blockquote>
-  </div>
-</section>
-
-<!-- WHAT I DO -->
-<section class="section" id="work">
-  <div class="container">
-    <header class="section__head">
-      <span class="section__num">03</span>
-      <h2 class="section__title">Что&nbsp;я&nbsp;делаю</h2>
-      <p class="section__lead">
-        Не&nbsp;консалтинг «со&nbsp;стороны» и&nbsp;не&nbsp;коучинг по&nbsp;шаблону. Вхожу в&nbsp;ситуацию как управленец, который лично прошёл кризисы роста — и&nbsp;знает, где у&nbsp;бизнеса ломается система.
-      </p>
-    </header>
-
-    <div class="work-grid">
-      <article class="work-card">
-        <span class="work-card__idx">I</span>
-        <h3>Управленческая диагностика</h3>
-        <p>Отделяю симптомы от&nbsp;причины. Фиксирую, где реально находится затык: в&nbsp;роли, в&nbsp;структуре, в&nbsp;распределении ответственности или в&nbsp;системе принятия решений.</p>
-      </article>
-      <article class="work-card">
-        <span class="work-card__idx">II</span>
-        <h3>Антикризисные решения</h3>
-        <p>Быстрые точные действия вместо хаотичных реформ. Первоочередные, отложенные и&nbsp;фоновые решения — с&nbsp;фокусом на&nbsp;последствиях, а&nbsp;не&nbsp;только на&nbsp;симптомах.</p>
-      </article>
-      <article class="work-card">
-        <span class="work-card__idx">III</span>
-        <h3>Перестройка процессов</h3>
-        <p>Переопределяю зоны ответственности, маршруты решений и&nbsp;точки контроля. Цель — чтобы процесс не&nbsp;зависел от&nbsp;героизма и&nbsp;ручного режима.</p>
-      </article>
-      <article class="work-card">
-        <span class="work-card__idx">IV</span>
-        <h3>Работа с&nbsp;командой</h3>
-        <p>Кого усиливать, кого переставлять, где проблема не&nbsp;в&nbsp;людях&nbsp;— а&nbsp;в&nbsp;структуре. Формирую управленческий слой, который берёт ответственность без&nbsp;внешнего давления.</p>
-      </article>
-      <article class="work-card">
-        <span class="work-card__idx">V</span>
-        <h3>AI как&nbsp;усилитель</h3>
-        <p>Встраиваю AI-инструменты там, где это даёт реальный рычаг сотруднику и&nbsp;процессу. Без&nbsp;моды и&nbsp;демонстраций — только там, где это сокращает цикл и&nbsp;снимает рутину.</p>
-      </article>
-      <article class="work-card">
-        <span class="work-card__idx">VI</span>
-        <h3>Контур контроля</h3>
-        <p>Выстраиваю понятные управленческие панели: только значимые сигналы, без&nbsp;отчётного шума. Управление перестаёт быть изматывающим.</p>
-      </article>
-    </div>
+    <ul class="benefits-grid" role="list">
+      <li class="benefit">
+        <span class="benefit__idx">01</span>
+        <p>Чёткую формулировку основного затыка.</p>
+      </li>
+      <li class="benefit">
+        <span class="benefit__idx">02</span>
+        <p>Разделение личного, командного и&nbsp;системного уровней.</p>
+      </li>
+      <li class="benefit">
+        <span class="benefit__idx">03</span>
+        <p>Первичную карту управленческих решений.</p>
+      </li>
+      <li class="benefit">
+        <span class="benefit__idx">04</span>
+        <p>Понимание формата дальнейшей работы.</p>
+      </li>
+      <li class="benefit">
+        <span class="benefit__idx">05</span>
+        <p>Без&nbsp;обязательств продолжать.</p>
+      </li>
+    </ul>
   </div>
 </section>
 
 <!-- METHOD / HOW I WORK -->
-<section class="section section--dim" id="method">
+<section class="section" id="method">
   <div class="container">
     <header class="section__head">
-      <span class="section__num">04</span>
-      <h2 class="section__title">Как&nbsp;я&nbsp;работаю</h2>
+      <span class="section__num">03</span>
+      <h2 class="section__title">Принципы работы</h2>
       <p class="section__lead">
         Формат основан на&nbsp;25+ годах управленческой практики. Без&nbsp;универсальных рецептов. Каждый разговор строится вокруг вашей конкретной ситуации, цифр, ролей и&nbsp;решений.
       </p>
@@ -473,195 +430,11 @@
   </div>
 </section>
 
-<!-- MANIFEST -->
-<section class="manifest" id="manifest" aria-labelledby="manifest-h">
-  <div class="container container--narrow manifest__row">
-    <span class="eyebrow eyebrow--center">Принцип</span>
-    <h2 class="manifest__title" id="manifest-h" data-reveal-lines>
-      <span>Бизнес растёт,</span>
-      <span>когда руководитель</span>
-      <span>перестаёт быть</span>
-      <span class="ms">узким горлышком</span>
-      <span>— и&nbsp;начинает</span>
-      <span class="ms">строить систему.</span>
-    </h2>
-    <div class="manifest__sign">
-      <svg viewBox="0 0 220 60" class="signature" aria-hidden="true">
-        <path d="M5 40 C 20 10, 40 55, 60 30 S 95 5, 115 35 S 155 55, 180 25 S 210 10, 218 30"
-              fill="none" stroke="url(#sigGrad)" stroke-width="1.4" stroke-linecap="round"/>
-        <defs>
-          <linearGradient id="sigGrad" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0" stop-color="#FFF7E6" stop-opacity=".3"/>
-            <stop offset=".5" stop-color="#F5EBD1"/>
-            <stop offset="1" stop-color="#FFF7E6" stop-opacity=".3"/>
-          </linearGradient>
-        </defs>
-      </svg>
-      <div class="manifest__sign-name">Алексей&nbsp;Бурыкин</div>
-    </div>
-  </div>
-</section>
-
-<!-- TEAM & LEADERSHIP -->
-<section class="section" id="team">
-  <div class="container">
-    <header class="section__head">
-      <span class="section__num">05</span>
-      <h2 class="section__title">Команда и&nbsp;управленческая&nbsp;вертикаль</h2>
-      <p class="section__lead">
-        В&nbsp;кризисной ситуации вопрос&nbsp;«кто виноват» почти всегда неправильный. Правильный&nbsp;— кого усиливать, кого переставлять и&nbsp;где узкое горлышко — не&nbsp;в&nbsp;людях, а&nbsp;в&nbsp;конструкции.
-      </p>
-    </header>
-
-    <div class="split">
-      <div class="split__col">
-        <h3 class="split__h">Разбираем по&nbsp;уровням</h3>
-        <ul class="tick-list" role="list">
-          <li>Кого&nbsp;— усиливать. На&nbsp;какой роли уже есть потенциал, но&nbsp;нет структуры.</li>
-          <li>Кого&nbsp;— переставлять. Где человек сильный, но&nbsp;не&nbsp;на&nbsp;своей позиции.</li>
-          <li>Кого&nbsp;— отпускать. Честно, вовремя, без&nbsp;эмоциональной инфляции.</li>
-          <li>Где AI-инструменты реально усиливают сотрудника&nbsp;— а&nbsp;где создают видимость работы.</li>
-          <li>Где проблема&nbsp;— не&nbsp;в&nbsp;людях, а&nbsp;в&nbsp;архитектуре ответственности.</li>
-        </ul>
-      </div>
-      <div class="split__col split__col--dark">
-        <h3 class="split__h">Что&nbsp;получаете на&nbsp;выходе</h3>
-        <ul class="tick-list tick-list--dark" role="list">
-          <li>Карта управленческого слоя: кто где, и&nbsp;почему именно там.</li>
-          <li>Резерв на&nbsp;ключевых ролях&nbsp;— устойчивость к&nbsp;уходу отдельных людей.</li>
-          <li>Понимание, кому делегировать и&nbsp;что именно.</li>
-          <li>Разделение личного, командного и&nbsp;системного уровней ответственности.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ECONOMICS -->
-<section class="section section--dim" id="economics">
-  <div class="container">
-    <header class="section__head">
-      <span class="section__num">06</span>
-      <h2 class="section__title">Экономика бизнеса: где&nbsp;течёт и&nbsp;где&nbsp;лежит&nbsp;резерв</h2>
-      <p class="section__lead">
-        В&nbsp;кризисной ситуации резать&nbsp;«всё подряд»&nbsp;— ошибка. Оптимизация должна быть хирургической. Сначала разбираемся, где на&nbsp;самом деле&nbsp;теряются деньги и&nbsp;скорость, и&nbsp;только потом принимаем решения.
-      </p>
-    </header>
-
-    <div class="econ-grid">
-      <article class="econ-card">
-        <h3>Где&nbsp;можно сократить&nbsp;безопасно</h3>
-        <p>Процессы, которые не&nbsp;создают ценности и&nbsp;существуют по&nbsp;инерции. Отчётность ради отчётности. Параллельные согласования.</p>
-      </article>
-      <article class="econ-card">
-        <h3>Где&nbsp;оптимизация должна быть&nbsp;точной</h3>
-        <p>Роли, связанные с&nbsp;качеством, сроками и&nbsp;клиентским опытом. Здесь нужна работа со&nbsp;структурой, а&nbsp;не&nbsp;с&nbsp;численностью.</p>
-      </article>
-      <article class="econ-card">
-        <h3>Где&nbsp;лежат скрытые резервы</h3>
-        <p>Делегирование, которое так и&nbsp;не&nbsp;сработало. Процессы, которые зациклены на&nbsp;собственнике. Решения, которые не&nbsp;принимаются неделями.</p>
-      </article>
-      <article class="econ-card">
-        <h3>Что&nbsp;трогать нельзя</h3>
-        <p>Ключевые роли, обеспечивающие управляемость. Каналы, на&nbsp;которых держится выручка. Доверие команды, если сокращения непрозрачны.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- DASHBOARDS -->
-<section class="section" id="dashboards">
-  <div class="container">
-    <header class="section__head">
-      <span class="section__num">07</span>
-      <h2 class="section__title">Прозрачность&nbsp;и&nbsp;контур&nbsp;контроля</h2>
-      <p class="section__lead">
-        Управление не&nbsp;должно быть изматывающим. Задача&nbsp;— сделать так, чтобы собственник видел состояние бизнеса через несколько значимых сигналов, а&nbsp;не&nbsp;через ежедневный ручной опрос.
-      </p>
-    </header>
-
-    <div class="dash">
-      <div class="dash__panel" aria-hidden="true">
-        <div class="dash__row">
-          <span class="dash__label">Финансовый поток</span>
-          <span class="dash__bar"><i style="--w:72%"></i></span>
-          <span class="dash__val">в&nbsp;норме</span>
-        </div>
-        <div class="dash__row">
-          <span class="dash__label">Скорость решений</span>
-          <span class="dash__bar"><i style="--w:48%"></i></span>
-          <span class="dash__val">внимание</span>
-        </div>
-        <div class="dash__row">
-          <span class="dash__label">Качество&nbsp;/ сроки</span>
-          <span class="dash__bar"><i style="--w:86%"></i></span>
-          <span class="dash__val">в&nbsp;норме</span>
-        </div>
-        <div class="dash__row">
-          <span class="dash__label">Управленческая нагрузка собственника</span>
-          <span class="dash__bar dash__bar--warn"><i style="--w:91%"></i></span>
-          <span class="dash__val">перегруз</span>
-        </div>
-        <div class="dash__row">
-          <span class="dash__label">Резерв на&nbsp;ключевых ролях</span>
-          <span class="dash__bar"><i style="--w:34%"></i></span>
-          <span class="dash__val">низкий</span>
-        </div>
-      </div>
-      <div class="dash__copy">
-        <h3>Панель, которую хочется открывать</h3>
-        <p>Никакой отчётной свалки. Только те&nbsp;метрики, которые реально влияют на&nbsp;управляемость: скорость решений, плотность делегирования, устойчивость ключевых ролей, нагрузка на&nbsp;собственника.</p>
-        <ul class="tick-list" role="list">
-          <li>Сигналы&nbsp;— вместо отчётов.</li>
-          <li>Короткий управленческий ритм вместо бесконечных совещаний.</li>
-          <li>Ясность&nbsp;— для&nbsp;вас, а&nbsp;не&nbsp;«для&nbsp;аудита».</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CASES / RESULTS -->
-<section class="section section--dim" id="cases">
-  <div class="container">
-    <header class="section__head">
-      <span class="section__num">08</span>
-      <h2 class="section__title">Результаты&nbsp;работы</h2>
-      <p class="section__lead">
-        Детали кейсов не&nbsp;публикуются: работа идёт с&nbsp;реальными управленческими решениями, а&nbsp;не&nbsp;с&nbsp;их&nbsp;публичными версиями. Формулировки ниже&nbsp;— это типовые сдвиги, которые фиксируются по&nbsp;итогам работы.
-      </p>
-    </header>
-
-    <div class="cases-grid">
-      <article class="case">
-        <span class="case__kind">Типовой сдвиг</span>
-        <h3>Собственник выходит из&nbsp;узкого&nbsp;горлышка</h3>
-        <p>Решения, которые&nbsp;«стояли&nbsp;на&nbsp;первом лице», переходят к&nbsp;управленческой команде. Без&nbsp;потери качества и&nbsp;скорости.</p>
-      </article>
-      <article class="case">
-        <span class="case__kind">Типовой сдвиг</span>
-        <h3>Делегирование&nbsp;начинает работать</h3>
-        <p>Ответственность перестаёт возвращаться. Управленческий слой формируется в&nbsp;пределах текущей команды, без&nbsp;массового найма.</p>
-      </article>
-      <article class="case">
-        <span class="case__kind">Типовой сдвиг</span>
-        <h3>Контроль становится&nbsp;структурным</h3>
-        <p>Ручной режим заменяется понятным контуром сигналов. Управленческая нагрузка собственника снижается, управляемость&nbsp;— растёт.</p>
-      </article>
-      <article class="case case--placeholder" aria-label="Место для будущего кейса">
-        <span class="case__kind">Кейс</span>
-        <h3>Подробный разбор&nbsp;— по&nbsp;запросу под&nbsp;NDA</h3>
-        <p>Если вам важно увидеть конкретный пример, близкий к&nbsp;вашему контексту, — обсудим на&nbsp;диагностической встрече.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <!-- FIT -->
-<section class="section" id="fit">
+<section class="section section--dim" id="fit">
   <div class="container">
     <header class="section__head">
-      <span class="section__num">09</span>
+      <span class="section__num">04</span>
       <h2 class="section__title">Кому&nbsp;формат&nbsp;подходит&nbsp;— и&nbsp;кому&nbsp;нет</h2>
       <p class="section__lead">
         Это не&nbsp;универсальная услуга. Лучше понять совместимость до&nbsp;начала работы, а&nbsp;не&nbsp;после.
@@ -696,7 +469,7 @@
 <section class="section section--about" id="about">
   <div class="container">
     <header class="about-head">
-      <span class="section__num">10</span>
+      <span class="section__num">05</span>
       <h2 class="section__title">Алексей&nbsp;Бурыкин</h2>
       <p class="about-role">Предприниматель и&nbsp;управленец с&nbsp;более чем 25-летним опытом. Прошёл управленческие кризисы изнутри — как собственник, как операционный&nbsp;директор, как ментор.</p>
     </header>
@@ -760,10 +533,10 @@
 </section>
 
 <!-- FORMATS -->
-<section class="section" id="format">
+<section class="section section--dim" id="format">
   <div class="container">
     <header class="section__head">
-      <span class="section__num">11</span>
+      <span class="section__num">06</span>
       <h2 class="section__title">Форматы&nbsp;и&nbsp;условия</h2>
       <p class="section__lead">
         Никаких скрытых условий и&nbsp;автоматических контрактов. Решение о&nbsp;продолжении принимается только если вы&nbsp;видите ценность.
@@ -810,10 +583,10 @@
 </section>
 
 <!-- FAQ -->
-<section class="section section--dim" id="faq">
+<section class="section" id="faq">
   <div class="container container--narrow">
     <header class="section__head">
-      <span class="section__num">12</span>
+      <span class="section__num">07</span>
       <h2 class="section__title">Частые&nbsp;вопросы</h2>
     </header>
 
@@ -957,8 +730,10 @@
       </div>
     </div>
     <nav class="footer__nav" aria-label="Разделы">
-      <a href="#work">Что я делаю</a>
-      <a href="#method">Метод</a>
+      <a href="#diagnosis">Ситуация</a>
+      <a href="#benefits">Что даёт сессия</a>
+      <a href="#method">Принципы</a>
+      <a href="#about">Обо мне</a>
       <a href="#format">Форматы</a>
       <a href="#faq">Вопросы</a>
       <a href="#contact">Контакт</a>

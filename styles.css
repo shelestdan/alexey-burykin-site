@@ -790,6 +790,54 @@ h1, h2, h3, p, li, dt, dd, a, span {
 }
 
 /* =======================================================
+   BENEFITS — что даёт первая встреча
+   ======================================================= */
+.benefits-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: rgba(16,46,74,.35);
+}
+.benefit {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  align-items: center;
+  gap: 28px;
+  padding: 26px 32px;
+  border-bottom: 1px solid var(--line);
+  transition: background .3s var(--ease);
+  position: relative;
+}
+.benefit:last-child { border-bottom: 0; }
+.benefit:hover { background: rgba(255,247,230,.04); }
+.benefit__idx {
+  font-family: var(--ff-serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 42px;
+  color: var(--accent);
+  letter-spacing: .01em;
+  line-height: 1;
+}
+.benefit p {
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .benefit { grid-template-columns: 64px 1fr; gap: 18px; padding: 22px 20px; }
+  .benefit__idx { font-size: 32px; }
+  .benefit p { font-size: 15.5px; }
+}
+
+/* =======================================================
    FAIL CARDS
    ======================================================= */
 .fail-grid {
@@ -1755,17 +1803,47 @@ h1, h2, h3, p, li, dt, dd, a, span {
 .rail.is-visible { opacity: 1; }
 .rail__list {
   display: flex; flex-direction: column;
-  gap: 4px;
+  gap: 2px;
   pointer-events: auto;
-  padding: 12px 10px;
+  padding: 14px 10px;
   background: rgba(16,46,74,.62);
   backdrop-filter: blur(14px) saturate(140%);
   -webkit-backdrop-filter: blur(14px) saturate(140%);
   border: 1px solid var(--line);
-  border-radius: 100px;
+  border-radius: 26px;
   box-shadow: 0 20px 50px -20px rgba(0,0,0,.6);
+  list-style: none;
+  margin: 0;
 }
 .rail__list li { position: relative; }
+
+/* semantic group separator */
+.rail__sep {
+  height: 1px;
+  margin: 8px 8px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255,247,230,.22) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+/* tiny group caption above each chunk */
+.rail__group-label {
+  pointer-events: none;
+  padding: 4px 0 2px;
+  text-align: center;
+}
+.rail__group-label > span {
+  font-family: var(--ff-sans);
+  font-size: 8.5px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--text-mute);
+  opacity: .75;
+}
 .rail__list a {
   display: flex; align-items: center; justify-content: center;
   width: 32px; height: 32px;
