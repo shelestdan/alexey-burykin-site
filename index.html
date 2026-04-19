@@ -156,20 +156,23 @@
 <!-- Floating side-rail section indicator -->
 <aside class="rail" aria-label="Навигация по разделам">
   <ol class="rail__list">
-    <li class="rail__group-label" aria-hidden="true"><span>Контекст</span></li>
-    <li><a href="#diagnosis" data-label="Ситуация"><span>01</span></a></li>
-    <li><a href="#benefits" data-label="Что даёт сессия"><span>02</span></a></li>
+    <li class="rail__group-label" aria-hidden="true"><span>Проблема</span></li>
+    <li><a href="#diagnosis" data-label="Вы узнаёте себя?"><span>01</span></a></li>
+    <li><a href="#fail" data-label="Почему не работает"><span>02</span></a></li>
     <li class="rail__sep" aria-hidden="true"></li>
-    <li class="rail__group-label" aria-hidden="true"><span>Работа</span></li>
-    <li><a href="#method" data-label="Принципы"><span>03</span></a></li>
-    <li><a href="#fit" data-label="Кому подходит"><span>04</span></a></li>
+    <li class="rail__group-label" aria-hidden="true"><span>Формат</span></li>
+    <li><a href="#benefits" data-label="Что даёт сессия"><span>03</span></a></li>
+    <li><a href="#method" data-label="Как проходит работа"><span>04</span></a></li>
+    <li><a href="#fit" data-label="Кому подходит"><span>05</span></a></li>
     <li class="rail__sep" aria-hidden="true"></li>
     <li class="rail__group-label" aria-hidden="true"><span>Автор</span></li>
-    <li><a href="#about" data-label="Обо мне"><span>05</span></a></li>
-    <li><a href="#format" data-label="Форматы"><span>06</span></a></li>
+    <li><a href="#about" data-label="Обо мне"><span>06</span></a></li>
+    <li><a href="#qualification" data-label="Квалификация"><span>07</span></a></li>
+    <li><a href="#format" data-label="Форматы и цены"><span>08</span></a></li>
     <li class="rail__sep" aria-hidden="true"></li>
-    <li class="rail__group-label" aria-hidden="true"><span>Ответы</span></li>
-    <li><a href="#faq" data-label="Вопросы"><span>07</span></a></li>
+    <li class="rail__group-label" aria-hidden="true"><span>Действие</span></li>
+    <li><a href="#quiz" data-label="Управленческий чек"><span>09</span></a></li>
+    <li><a href="#faq" data-label="Вопросы"><span>10</span></a></li>
     <li><a href="#contact" data-label="Записаться"><span>→</span></a></li>
   </ol>
 </aside>
@@ -297,20 +300,20 @@
   <div class="container">
     <header class="section__head">
       <span class="section__num">01</span>
-      <h2 class="section__title">Что происходит в&nbsp;бизнесе прямо&nbsp;сейчас</h2>
+      <h2 class="section__title">Вы узнаёте себя?</h2>
       <p class="section__lead">
-        Обычно ко&nbsp;мне приходят руководители и&nbsp;собственники, у&nbsp;которых ситуация выглядит примерно&nbsp;так. Это не&nbsp;частные сбои — это системный управленческий затык.
+        Обычно к&nbsp;разговору со&nbsp;мной приходят руководители и&nbsp;собственники, у&nbsp;которых ситуация выглядит примерно так:
       </p>
     </header>
 
     <ul class="diag-grid" role="list">
       <li class="diag-card">
         <span class="diag-card__idx">01</span>
-        <p>Без&nbsp;вас решения замедляются, а&nbsp;ключевые процессы&nbsp;«провисают».</p>
+        <p>Без&nbsp;вас решения замедляются, а&nbsp;ключевые процессы «провисают».</p>
       </li>
       <li class="diag-card">
         <span class="diag-card__idx">02</span>
-        <p>Делегирование формально есть, но&nbsp;ответственность в&nbsp;итоге возвращается к&nbsp;вам.</p>
+        <p>Делегирование формально есть, но&nbsp;ответственность в&nbsp;итоге всё&nbsp;равно возвращается к&nbsp;вам.</p>
       </li>
       <li class="diag-card">
         <span class="diag-card__idx">03</span>
@@ -326,60 +329,119 @@
       </li>
       <li class="diag-card">
         <span class="diag-card__idx">06</span>
-        <p>Напряжение из&nbsp;бизнеса регулярно залезает в&nbsp;личную жизнь.</p>
+        <p>Напряжение из&nbsp;бизнеса начинает регулярно залезать в&nbsp;личную жизнь.</p>
       </li>
     </ul>
 
     <p class="section__footnote">
-      Отметили 2–3&nbsp;пункта? Значит, проблема не&nbsp;в&nbsp;людях и&nbsp;не&nbsp;в&nbsp;инструментах. Проблема — в&nbsp;архитектуре управления.
+      Если вы отметили 2–3&nbsp;пункта&nbsp;— это не&nbsp;частные сбои. Обычно это системный управленческий затык.
+    </p>
+  </div>
+</section>
+
+<!-- FAIL — Почему обычные решения не работают -->
+<section class="section section--dim" id="fail">
+  <div class="container">
+    <header class="section__head">
+      <span class="section__num">02</span>
+      <h2 class="section__title">Почему обычные управленческие решения не&nbsp;дают результата</h2>
+      <p class="section__lead">
+        Когда возникает системный затык, руководитель действует логично. Но&nbsp;чаще всего проблема лежит глубже, чем инструменты.
+      </p>
+    </header>
+
+    <div class="fail-grid">
+      <article class="fail-card">
+        <span class="fail-card__idx">01</span>
+        <h3>Обучение и&nbsp;книги</h3>
+        <p>Знания появляются. Поведение системы остаётся прежним.</p>
+      </article>
+      <article class="fail-card">
+        <span class="fail-card__idx">02</span>
+        <h3>Советы коллег</h3>
+        <p>Работают в&nbsp;их&nbsp;контексте. Ваш контекст — другой: структура, масштаб, зрелость команды.</p>
+      </article>
+      <article class="fail-card">
+        <span class="fail-card__idx">03</span>
+        <h3>Найм «сильного управленца»</h3>
+        <p>Если архитектура управления не&nbsp;выстроена, новый человек либо встраивается в&nbsp;старую модель, либо вступает в&nbsp;конфликт с&nbsp;вами.</p>
+      </article>
+      <article class="fail-card">
+        <span class="fail-card__idx">04</span>
+        <h3>Усиление контроля</h3>
+        <p>Даёт краткосрочную управляемость. Но&nbsp;закрепляет зависимость компании от&nbsp;вашего личного участия.</p>
+      </article>
+    </div>
+
+    <p class="section__footnote">
+      Если ничего не&nbsp;менять, зависимость компании от&nbsp;вас будет только усиливаться.
     </p>
   </div>
 </section>
 
 <!-- BENEFITS — что даёт первая встреча -->
-<section class="section section--dim" id="benefits">
+<section class="section" id="benefits">
   <div class="container">
     <header class="section__head">
-      <span class="section__num">02</span>
+      <span class="section__num">03</span>
       <h2 class="section__title">Что даёт первая встреча</h2>
       <p class="section__lead">
-        Без&nbsp;обязательств продолжать. По&nbsp;итогам 30-минутной сессии вы&nbsp;получаете не&nbsp;советы, а&nbsp;управленческую оптику.
+        Пробная ментор-сессия&nbsp;— это не&nbsp;знакомство и&nbsp;не&nbsp;предварительный разговор. Это полноценный разбор вашей управленческой ситуации.
       </p>
     </header>
 
     <ul class="benefits-grid" role="list">
       <li class="benefit">
         <span class="benefit__idx">01</span>
-        <p>Чёткую формулировку основного затыка.</p>
+        <div class="benefit__body">
+          <h3>Чёткую формулировку основного затыка</h3>
+          <p>Мы отделим симптомы от&nbsp;причины и&nbsp;зафиксируем, где именно находится проблема: в&nbsp;роли, в&nbsp;структуре, в&nbsp;распределении ответственности или в&nbsp;системе управления.</p>
+        </div>
       </li>
       <li class="benefit">
         <span class="benefit__idx">02</span>
-        <p>Разделение личного, командного и&nbsp;системного уровней.</p>
+        <div class="benefit__body">
+          <h3>Разделение личного, командного и&nbsp;системного уровней</h3>
+          <p>Вы увидите, что относится к&nbsp;вам как к&nbsp;руководителю, что&nbsp;— к&nbsp;зрелости команды, а&nbsp;что&nbsp;— к&nbsp;архитектуре управления.</p>
+        </div>
       </li>
       <li class="benefit">
         <span class="benefit__idx">03</span>
-        <p>Первичную карту управленческих решений.</p>
+        <div class="benefit__body">
+          <h3>Первичную карту управленческих решений</h3>
+          <p>Не&nbsp;абстрактные рекомендации, а&nbsp;конкретные направления изменений: что усиливать, что перестраивать, что прекращать.</p>
+        </div>
       </li>
       <li class="benefit">
         <span class="benefit__idx">04</span>
-        <p>Понимание формата дальнейшей работы.</p>
+        <div class="benefit__body">
+          <h3>Понимание формата дальнейшей работы</h3>
+          <p>В&nbsp;конце встречи вы понимаете, нужен ли вам углублённый формат из&nbsp;нескольких сессий или достаточно полученной ясности.</p>
+        </div>
       </li>
       <li class="benefit">
         <span class="benefit__idx">05</span>
-        <p>Без&nbsp;обязательств продолжать.</p>
+        <div class="benefit__body">
+          <h3>Без&nbsp;обязательств продолжать</h3>
+          <p>Пробная сессия&nbsp;— самостоятельный формат. Решение о&nbsp;дальнейшем контракте принимается только если вы&nbsp;видите ценность.</p>
+        </div>
       </li>
     </ul>
+
+    <div class="benefits-cta">
+      <a class="btn btn--primary btn--lg" href="#contact">Обсудить мою ситуацию</a>
+    </div>
   </div>
 </section>
 
 <!-- METHOD / HOW I WORK -->
-<section class="section" id="method">
+<section class="section section--dim" id="method">
   <div class="container">
     <header class="section__head">
-      <span class="section__num">03</span>
-      <h2 class="section__title">Принципы работы</h2>
+      <span class="section__num">04</span>
+      <h2 class="section__title">Как проходит работа</h2>
       <p class="section__lead">
-        Формат основан на&nbsp;25+ годах управленческой практики. Без&nbsp;универсальных рецептов. Каждый разговор строится вокруг вашей конкретной ситуации, цифр, ролей и&nbsp;решений.
+        Я&nbsp;не&nbsp;даю универсальных рецептов и&nbsp;не&nbsp;работаю по&nbsp;шаблону. Каждый разговор строится вокруг вашей конкретной ситуации, цифр, ролей и&nbsp;решений. Этот формат основан на&nbsp;25+ годах управленческой практики.
       </p>
     </header>
 
@@ -387,29 +449,29 @@
       <li>
         <span class="method-list__num">01</span>
         <div>
-          <h3>От&nbsp;реальности, а&nbsp;не&nbsp;от&nbsp;теории</h3>
-          <p>Разбираем текущие процессы, распределение ответственности и&nbsp;управленческую архитектуру. Без&nbsp;отвлечённых моделей ради моделей.</p>
+          <h3>Работаем от&nbsp;реальности, а&nbsp;не&nbsp;от&nbsp;теории</h3>
+          <p>Мы&nbsp;разбираем текущие процессы, распределение ответственности и&nbsp;управленческую архитектуру. Без&nbsp;отвлечённых моделей ради моделей.</p>
         </div>
       </li>
       <li>
         <span class="method-list__num">02</span>
         <div>
-          <h3>Сложные вопросы вместо мягких формулировок</h3>
-          <p>Если затык связан с&nbsp;вашей ролью или стилем управления — мы&nbsp;называем это прямо. Без&nbsp;обвинений и&nbsp;без&nbsp;сглаживания.</p>
+          <h3>Сложные вопросы — вместо мягких формулировок</h3>
+          <p>Если затык связан с&nbsp;вашей ролью или стилем управления, мы&nbsp;это называем прямо. Без&nbsp;обвинений, но&nbsp;и&nbsp;без&nbsp;сглаживания.</p>
         </div>
       </li>
       <li>
         <span class="method-list__num">03</span>
         <div>
           <h3>Фокус на&nbsp;системе, а&nbsp;не&nbsp;на&nbsp;героизме</h3>
-          <p>Цель — не&nbsp;усилить вашу личную загрузку, а&nbsp;выстроить среду, в&nbsp;которой ответственность берёт команда.</p>
+          <p>Цель&nbsp;— не&nbsp;усилить вашу личную загрузку, а&nbsp;выстроить среду, в&nbsp;которой ответственность берёт команда.</p>
         </div>
       </li>
       <li>
         <span class="method-list__num">04</span>
         <div>
-          <h3>Максимум результата из&nbsp;имеющихся ресурсов</h3>
-          <p>Сначала&nbsp;— точечные вмешательства в&nbsp;текущий контур, и&nbsp;только потом — решения, требующие новых вложений.</p>
+          <h3>Опора на&nbsp;управленческий опыт</h3>
+          <p>Работа строится не&nbsp;из&nbsp;позиции «консультанта со&nbsp;стороны», а&nbsp;из&nbsp;опыта управления и&nbsp;прохождения собственных кризисов роста.</p>
         </div>
       </li>
       <li>
@@ -423,53 +485,61 @@
         <span class="method-list__num">06</span>
         <div>
           <h3>Конфиденциальность</h3>
-          <p>Разговор остаётся между нами. Обсуждаем реальные решения, а&nbsp;не&nbsp;публичные версии происходящего.</p>
+          <p>Разговор остаётся между нами. Мы&nbsp;обсуждаем реальные решения, а&nbsp;не&nbsp;публичные версии происходящего.</p>
         </div>
       </li>
     </ol>
+
+    <p class="section__footnote">
+      Это взрослый диалог о&nbsp;роли, системе и&nbsp;ответственности&nbsp;— без&nbsp;иллюзий и&nbsp;без&nbsp;давления.
+    </p>
   </div>
 </section>
 
 <!-- FIT -->
-<section class="section section--dim" id="fit">
+<section class="section" id="fit">
   <div class="container">
     <header class="section__head">
-      <span class="section__num">04</span>
-      <h2 class="section__title">Кому&nbsp;формат&nbsp;подходит&nbsp;— и&nbsp;кому&nbsp;нет</h2>
+      <span class="section__num">05</span>
+      <h2 class="section__title">Кому&nbsp;подойдёт этот формат&nbsp;— и&nbsp;кому&nbsp;нет</h2>
       <p class="section__lead">
-        Это не&nbsp;универсальная услуга. Лучше понять совместимость до&nbsp;начала работы, а&nbsp;не&nbsp;после.
+        Менторская работа&nbsp;— это не&nbsp;универсальная услуга. Она подходит тем, кто готов к&nbsp;управленческому разбору своей роли и&nbsp;системы.
       </p>
     </header>
 
     <div class="fit-grid">
       <div class="fit-col fit-col--yes">
-        <h3>Подойдёт, если</h3>
+        <h3>Подойдёт, если:</h3>
         <ul class="tick-list tick-list--check" role="list">
-          <li>Вы собственник или руководитель высшего звена и&nbsp;лично влияете на&nbsp;управленческие решения.</li>
-          <li>Вы понимаете, что&nbsp;проблема системная, а&nbsp;не&nbsp;просто&nbsp;«люди не&nbsp;те».</li>
-          <li>Готовы честно смотреть на&nbsp;собственную управленческую роль, а&nbsp;не&nbsp;только на&nbsp;ошибки команды.</li>
+          <li>Вы собственник бизнеса или&nbsp;руководитель высшего звена и&nbsp;лично влияете на&nbsp;управленческие решения.</li>
+          <li>Вы понимаете, что&nbsp;проблема системная, а&nbsp;не&nbsp;просто «люди не&nbsp;те».</li>
+          <li>Готовы честно смотреть на&nbsp;свою управленческую роль, а&nbsp;не&nbsp;только на&nbsp;ошибки команды.</li>
           <li>Вам важна ясность и&nbsp;структура, а&nbsp;не&nbsp;вдохновение и&nbsp;поддержка.</li>
           <li>Вы готовы принимать решения и&nbsp;нести за&nbsp;них ответственность.</li>
         </ul>
       </div>
       <div class="fit-col fit-col--no">
-        <h3>Не&nbsp;подойдёт, если</h3>
+        <h3>Не&nbsp;подойдёт, если:</h3>
         <ul class="tick-list tick-list--cross" role="list">
-          <li>Ищете быстрые универсальные рецепты и&nbsp;готовые инструкции&nbsp;«что делать завтра».</li>
-          <li>Хотите подтверждения, что&nbsp;проблема исключительно в&nbsp;сотрудниках.</li>
-          <li>Не&nbsp;готовы к&nbsp;прямым вопросам о&nbsp;собственной роли в&nbsp;происходящем.</li>
-          <li>Рассматриваете разговор как способ снять тревожность, а&nbsp;не&nbsp;изменить систему.</li>
+          <li>Вы ищете быстрые универсальные рецепты или&nbsp;готовые инструкции «что делать завтра».</li>
+          <li>Хотите, чтобы кто-то подтвердил, что&nbsp;проблема исключительно в&nbsp;сотрудниках.</li>
+          <li>Не&nbsp;готовы к&nbsp;прямым вопросам и&nbsp;разбору собственной роли в&nbsp;происходящем.</li>
+          <li>Рассматриваете разговор как способ снять тревожность, а&nbsp;не&nbsp;изменить систему управления.</li>
         </ul>
       </div>
     </div>
+
+    <p class="section__footnote">
+      Если вы готовы к&nbsp;взрослому управленческому разговору&nbsp;— формат сработает. Если нет&nbsp;— лучше это понять до&nbsp;начала работы.
+    </p>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="section section--about" id="about">
+<section class="section section--about section--dim" id="about">
   <div class="container">
     <header class="about-head">
-      <span class="section__num">05</span>
+      <span class="section__num">06</span>
       <h2 class="section__title">Алексей&nbsp;Бурыкин</h2>
       <p class="about-role">Предприниматель и&nbsp;управленец с&nbsp;более чем 25-летним опытом. Прошёл управленческие кризисы изнутри — как собственник, как операционный&nbsp;директор, как ментор.</p>
     </header>
@@ -532,27 +602,72 @@
   </div>
 </section>
 
+<!-- QUALIFICATION -->
+<section class="section" id="qualification">
+  <div class="container">
+    <header class="section__head">
+      <span class="section__num">07</span>
+      <h2 class="section__title">Подтверждённая квалификация</h2>
+      <p class="section__lead">
+        Формат работы основан на&nbsp;практическом управленческом опыте и&nbsp;профессиональном обучении менторингу.
+      </p>
+    </header>
+
+    <div class="qual-grid">
+      <article class="qual-card">
+        <div class="qual-card__seal" aria-hidden="true">
+          <svg viewBox="0 0 80 80" width="56" height="56">
+            <circle cx="40" cy="40" r="34" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M26 40 L36 50 L56 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Управленческая практика 25+ лет</h3>
+        <p>Собственник, операционный директор, антикризисный управленец. Работа с&nbsp;архитектурой управления изнутри.</p>
+      </article>
+      <article class="qual-card">
+        <div class="qual-card__seal" aria-hidden="true">
+          <svg viewBox="0 0 80 80" width="56" height="56">
+            <rect x="14" y="14" width="52" height="52" rx="4" fill="none" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M22 32 H58 M22 42 H50 M22 52 H44" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Профессиональное обучение менторингу</h3>
+        <p>Менторский формат как&nbsp;отдельная дисциплина: работа с&nbsp;ролью, системой, ответственностью.</p>
+      </article>
+      <article class="qual-card">
+        <div class="qual-card__seal" aria-hidden="true">
+          <svg viewBox="0 0 80 80" width="56" height="56">
+            <path d="M40 12 L52 34 L76 38 L58 54 L64 78 L40 66 L16 78 L22 54 L4 38 L28 34 Z" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Кризисы роста&nbsp;— пройдены лично</h3>
+        <p>Знаю, как выглядит управленческий затык не&nbsp;из&nbsp;теории, а&nbsp;из&nbsp;практики принятия решений.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- FORMATS -->
 <section class="section section--dim" id="format">
   <div class="container">
     <header class="section__head">
-      <span class="section__num">06</span>
-      <h2 class="section__title">Форматы&nbsp;и&nbsp;условия</h2>
+      <span class="section__num">08</span>
+      <h2 class="section__title">Формат работы и&nbsp;условия</h2>
       <p class="section__lead">
-        Никаких скрытых условий и&nbsp;автоматических контрактов. Решение о&nbsp;продолжении принимается только если вы&nbsp;видите ценность.
+        Выбирайте удобный формат&nbsp;— я&nbsp;адаптируюсь под&nbsp;ваш ритм и&nbsp;задачу. Никаких скрытых условий и&nbsp;автоматических контрактов. Решение о&nbsp;продолжении принимается только если вы&nbsp;видите ценность.
       </p>
     </header>
 
     <div class="format-grid">
       <article class="format-card format-card--primary" data-tilt>
         <header>
-          <span class="format-card__kind">01 · Первая встреча</span>
-          <h3>Диагностическая ментор-сессия</h3>
+          <span class="format-card__kind">01 · Пробная сессия</span>
+          <h3>Пробная ментор-сессия</h3>
         </header>
         <p class="format-card__lead">Структурированный разбор текущей управленческой ситуации. Фиксация ключевого затыка и&nbsp;направлений решений.</p>
         <ul class="format-card__list" role="list">
-          <li>Индивидуально · 30&nbsp;минут</li>
-          <li>Онлайн</li>
+          <li>Индивидуально · 1&nbsp;час</li>
+          <li>Формат: онлайн</li>
           <li>Без&nbsp;обязательств продолжать</li>
         </ul>
         <div class="format-card__foot">
@@ -564,14 +679,13 @@
       <article class="format-card" data-tilt>
         <header>
           <span class="format-card__kind">02 · Углублённая работа</span>
-          <h3>Серия&nbsp;управленческих&nbsp;сессий</h3>
+          <h3>Дальнейший формат работы</h3>
         </header>
-        <p class="format-card__lead">Если по&nbsp;итогам первой встречи вы&nbsp;видите ценность в&nbsp;углублённой работе — возможен формат из&nbsp;3&nbsp;и&nbsp;более сессий.</p>
+        <p class="format-card__lead">Если по&nbsp;итогам первой встречи вы&nbsp;видите ценность в&nbsp;углублённой работе, возможен формат из&nbsp;3&nbsp;и&nbsp;более сессий.</p>
         <ul class="format-card__list" role="list">
-          <li>Перестройка управленческой роли</li>
-          <li>Система делегирования и&nbsp;ответственности</li>
-          <li>Рост управленческой команды</li>
-          <li>Внедрение принятых решений</li>
+          <li>Индивидуально · 1&nbsp;час</li>
+          <li>Онлайн</li>
+          <li>Под&nbsp;управленческую задачу</li>
         </ul>
         <div class="format-card__foot">
           <span class="format-card__price">10&nbsp;000&nbsp;₽<span class="format-card__price-note"> / встреча</span></span>
@@ -582,11 +696,79 @@
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="section" id="faq">
+<!-- QUIZ — управленческий чек -->
+<section class="section" id="quiz">
   <div class="container container--narrow">
     <header class="section__head">
-      <span class="section__num">07</span>
+      <span class="section__num">09</span>
+      <h2 class="section__title">Управленческий чек&nbsp;— 3 вопроса</h2>
+      <p class="section__lead">
+        Короткий самодиагностический опрос. Помогает до&nbsp;сессии понять, где находится ваш управленческий затык.
+      </p>
+    </header>
+
+    <form class="quiz" id="quiz" novalidate aria-label="Управленческий чек из 3 вопросов">
+      <fieldset class="quiz__step" data-step="1">
+        <legend class="quiz__legend">
+          <span class="quiz__step-num">01 / 03</span>
+          <span class="quiz__q">Если вы на&nbsp;2&nbsp;недели полностью выпадете из&nbsp;операционной деятельности, что произойдёт?</span>
+        </legend>
+        <div class="quiz__options">
+          <label class="quiz__opt"><input type="radio" name="q1" value="Бизнес продолжит работать почти без изменений"><span>Бизнес продолжит работать почти без&nbsp;изменений</span></label>
+          <label class="quiz__opt"><input type="radio" name="q1" value="Замедлится, но не критично"><span>Замедлится, но&nbsp;не&nbsp;критично</span></label>
+          <label class="quiz__opt"><input type="radio" name="q1" value="Ключевые решения остановятся"><span>Ключевые решения остановятся</span></label>
+          <label class="quiz__opt"><input type="radio" name="q1" value="Начнётся управленческий хаос"><span>Начнётся управленческий хаос</span></label>
+          <label class="quiz__opt"><input type="radio" name="q1" value="Свой вариант"><span>Свой вариант</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="quiz__step" data-step="2">
+        <legend class="quiz__legend">
+          <span class="quiz__step-num">02 / 03</span>
+          <span class="quiz__q">Когда вы делегируете задачу, чаще всего:</span>
+        </legend>
+        <div class="quiz__options">
+          <label class="quiz__opt"><input type="radio" name="q2" value="Её выполняют и берут ответственность"><span>Её выполняют и&nbsp;берут ответственность</span></label>
+          <label class="quiz__opt"><input type="radio" name="q2" value="Её выполняют, но контроль остаётся за вами"><span>Её выполняют, но&nbsp;контроль остаётся за&nbsp;вами</span></label>
+          <label class="quiz__opt"><input type="radio" name="q2" value="Её возвращают вам с уточнениями и сомнениями"><span>Её возвращают вам с&nbsp;уточнениями и&nbsp;сомнениями</span></label>
+          <label class="quiz__opt"><input type="radio" name="q2" value="В итоге вы делаете её сами"><span>В&nbsp;итоге вы делаете её&nbsp;сами</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="quiz__step" data-step="3">
+        <legend class="quiz__legend">
+          <span class="quiz__step-num">03 / 03</span>
+          <span class="quiz__q">Что сейчас вызывает наибольшее напряжение?</span>
+        </legend>
+        <div class="quiz__options">
+          <label class="quiz__opt"><input type="radio" name="q3" value="Перегрузка операционкой"><span>Перегрузка операционкой</span></label>
+          <label class="quiz__opt"><input type="radio" name="q3" value="Слабая управленческая команда"><span>Слабая управленческая команда</span></label>
+          <label class="quiz__opt"><input type="radio" name="q3" value="Неясность моей роли дальше"><span>Неясность моей роли дальше</span></label>
+          <label class="quiz__opt"><input type="radio" name="q3" value="Отсутствие системного роста"><span>Отсутствие системного роста</span></label>
+        </div>
+      </fieldset>
+
+      <div class="quiz__result" id="quizResult" aria-live="polite" hidden>
+        <div class="quiz__result-card">
+          <span class="eyebrow">Почти готово</span>
+          <h3>Осталось оставить контакты, чтобы обсудить ваш управленческий затык.</h3>
+          <a class="btn btn--primary btn--lg" href="#contact">Перейти к&nbsp;форме записи</a>
+        </div>
+      </div>
+
+      <div class="quiz__progress" aria-hidden="true">
+        <i class="quiz__progress-bar" style="--p:0%"></i>
+        <span class="quiz__progress-label">Заполнено <b>0</b>&nbsp;/&nbsp;3</span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--dim" id="faq">
+  <div class="container container--narrow">
+    <header class="section__head">
+      <span class="section__num">10</span>
       <h2 class="section__title">Частые&nbsp;вопросы</h2>
     </header>
 
@@ -596,15 +778,15 @@
         <div class="faq__body"><p>И&nbsp;про&nbsp;то, и&nbsp;про&nbsp;другое. Мы&nbsp;разбираем управленческую систему через вашу роль в&nbsp;ней. Если затык в&nbsp;структуре&nbsp;— работаем со&nbsp;структурой. Если в&nbsp;роли руководителя&nbsp;— честно это обозначаем.</p></div>
       </details>
       <details class="faq__item">
-        <summary>А&nbsp;что, если после первой сессии я&nbsp;не&nbsp;пойму, что делать дальше?</summary>
-        <div class="faq__body"><p>Такого обычно не&nbsp;происходит: цель первой встречи&nbsp;— сформулировать затык и&nbsp;направления решений. Но&nbsp;если вы&nbsp;поймёте, что формат не&nbsp;подходит&nbsp;— на&nbsp;этом работа заканчивается. Без&nbsp;обязательств продолжать.</p></div>
+        <summary>Что если после первой сессии я&nbsp;не&nbsp;пойму, что делать дальше?</summary>
+        <div class="faq__body"><p>Такого обычно не&nbsp;происходит, потому что цель первой встречи&nbsp;— сформулировать затык и&nbsp;направления решений. Но&nbsp;если вы&nbsp;поймёте, что формат вам не&nbsp;подходит&nbsp;— на&nbsp;этом работа заканчивается. Без&nbsp;обязательств продолжать.</p></div>
       </details>
       <details class="faq__item">
         <summary>Это консалтинг или коучинг?</summary>
-        <div class="faq__body"><p>Это менторский формат. Я&nbsp;не&nbsp;даю универсальных решений&nbsp;«по&nbsp;учебнику» и&nbsp;не&nbsp;работаю только вопросами. Опираемся на&nbsp;ваш контекст и&nbsp;предпринимательский опыт, чтобы сформировать управленческие решения.</p></div>
+        <div class="faq__body"><p>Это менторский формат. Я&nbsp;не&nbsp;даю универсальных решений «по&nbsp;учебнику» и&nbsp;не&nbsp;работаю только вопросами. Мы&nbsp;опираемся на&nbsp;ваш контекст и&nbsp;предпринимательский опыт, чтобы сформировать управленческие решения.</p></div>
       </details>
       <details class="faq__item">
-        <summary>Нужно ли готовиться к&nbsp;первой сессии?</summary>
+        <summary>Нужно ли готовиться к&nbsp;пробной сессии?</summary>
         <div class="faq__body"><p>Специальной подготовки не&nbsp;требуется. Достаточно быть готовым открыто обсуждать текущую ситуацию: структуру команды, зоны ответственности, управленческие сложности.</p></div>
       </details>
       <details class="faq__item">
@@ -612,8 +794,8 @@
         <div class="faq__body"><p>Да. Первая сессия заканчивается фиксацией ключевого затыка и&nbsp;направлений решений. Без&nbsp;этого разговор не&nbsp;имеет смысла.</p></div>
       </details>
       <details class="faq__item">
-        <summary>Что, если проблема окажется во&nbsp;мне?</summary>
-        <div class="faq__body"><p>Тогда аккуратно обозначим это. Без&nbsp;обвинений и&nbsp;давления. Речь всегда идёт не&nbsp;о&nbsp;личности, а&nbsp;о&nbsp;роли и&nbsp;управленческой позиции.</p></div>
+        <summary>Что если проблема окажется во&nbsp;мне?</summary>
+        <div class="faq__body"><p>Тогда мы&nbsp;это аккуратно обозначим. Без&nbsp;обвинений и&nbsp;без&nbsp;давления. Речь всегда идёт не&nbsp;о&nbsp;личности, а&nbsp;о&nbsp;роли и&nbsp;управленческой позиции.</p></div>
       </details>
     </div>
   </div>
@@ -623,8 +805,8 @@
 <section class="section section--contact" id="contact">
   <div class="container contact-row">
     <div class="contact-copy">
-      <span class="eyebrow">Диагностическая сессия</span>
-      <h2 class="contact-title">Разберём вашу ситуацию на&nbsp;первой&nbsp;встрече</h2>
+      <span class="eyebrow">Пробная ментор-сессия · 0&nbsp;₽</span>
+      <h2 class="contact-title">Готовы&nbsp;начать?</h2>
       <p class="contact-lead">
         Онлайн · 30&nbsp;минут · 0&nbsp;₽. Без&nbsp;обязательств продолжать. Вы&nbsp;получаете формулировку ключевого управленческого затыка и&nbsp;карту первых решений.
       </p>
@@ -730,13 +912,16 @@
       </div>
     </div>
     <nav class="footer__nav" aria-label="Разделы">
-      <a href="#diagnosis">Ситуация</a>
+      <a href="#diagnosis">Вы узнаёте себя?</a>
+      <a href="#fail">Почему не работает</a>
       <a href="#benefits">Что даёт сессия</a>
-      <a href="#method">Принципы</a>
+      <a href="#method">Как проходит работа</a>
+      <a href="#fit">Кому подходит</a>
       <a href="#about">Обо мне</a>
-      <a href="#format">Форматы</a>
-      <a href="#faq">Вопросы</a>
-      <a href="#contact">Контакт</a>
+      <a href="#format">Формат и условия</a>
+      <a href="#quiz">Управленческий чек</a>
+      <a href="#faq">Частые вопросы</a>
+      <a href="#contact">Записаться</a>
     </nav>
     <div class="footer__contact">
       <a href="https://t.me/Mbobr1975" target="_blank" rel="noopener">Telegram&nbsp;→</a>

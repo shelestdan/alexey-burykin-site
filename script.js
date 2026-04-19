@@ -484,4 +484,29 @@
     }, { threshold: 0.3 });
     dashIo.observe(dashPanel);
   }
+
+  // --- QUIZ: progress + reveal result when all 3 answered ----------------
+  var quiz = document.getElementById('quiz');
+  if (quiz) {
+    var progressBar = quiz.querySelector('.quiz__progress-bar');
+    var progressLabel = quiz.querySelector('.quiz__progress-label b');
+    var result = document.getElementById('quizResult');
+    var total = 3;
+    function updateQuiz() {
+      var answered = 0;
+      for (var i = 1; i <= total; i++) {
+        if (quiz.querySelector('input[name="q' + i + '"]:checked')) answered++;
+      }
+      if (progressBar) progressBar.style.setProperty('--p', (answered / total * 100) + '%');
+      if (progressLabel) progressLabel.textContent = String(answered);
+      if (result) {
+        if (answered === total) result.hidden = false;
+        else result.hidden = true;
+      }
+    }
+    quiz.addEventListener('change', function (e) {
+      if (e.target && e.target.type === 'radio') updateQuiz();
+    });
+    updateQuiz();
+  }
 })();
