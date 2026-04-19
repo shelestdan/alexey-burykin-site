@@ -1,9 +1,9 @@
 /* =========================================================
-   Алексей Бурыкин — graphite executive site
+   Алексей Бурыкин — compass-direct redesign (navy + cream)
    ========================================================= */
 
 :root {
-  /* palette — 2 hues only: deep graphite + fresh mineral mint */
+  /* palette — 2 hues only: deep navy #102E4A + warm cream #FFF7E6 */
   --bg:            #102E4A;
   --bg-2:          #0A2137;
   --surface:       #14385A;
@@ -13,8 +13,8 @@
   --text:          #FFF7E6;
   --text-dim:      #D4CDB8;
   --text-mute:     #9A9281;
-  --accent:        #FFF7E6;   /* fresh mineral mint — primary accent */
-  --accent-2:      #F5EBD1;   /* lighter derivative, same hue */
+  --accent:        #FFF7E6;   /* cream — primary accent */
+  --accent-2:      #F5EBD1;   /* lighter cream derivative, same hue */
   --accent-ink:    #102E4A;
   --warn:          #E3C58B;
   --glow:          rgba(255,247,230,.18);
@@ -75,7 +75,7 @@ body {
   overflow-x: clip;
 }
 
-/* text selection — sage accent, not OS default blue */
+/* text selection — cream accent, not OS default blue */
 ::selection { background: rgba(255,247,230,.35); color: #102E4A; }
 ::-moz-selection { background: rgba(255,247,230,.35); color: #102E4A; }
 
