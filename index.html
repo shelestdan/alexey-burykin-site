@@ -241,7 +241,7 @@
 
   <div class="container hero__row">
     <div class="hero__content">
-      <span class="eyebrow">Пробная ментор-сессия · Алексей&nbsp;Бурыкин</span>
+      <span class="eyebrow">Управленческий ментор для собственников · Первая встреча — 0&nbsp;₽</span>
       <h1 class="hero__title" data-split>
         Если&nbsp;бизнес держится только на&nbsp;вас&nbsp;—<br/>
         это не&nbsp;рост. <span class="accent">Это ограничение.</span>
@@ -953,7 +953,7 @@
 
       <label class="field field--check">
         <input id="consent" name="consent" type="checkbox" required aria-required="true" aria-describedby="consent-err" />
-        <span>Согласен(-на) с&nbsp;обработкой персональных данных для&nbsp;обратной связи.</span>
+        <span>Согласен(-на) на&nbsp;<a href="privacy.html" target="_blank" rel="noopener" class="form-link">обработку персональных данных</a> в&nbsp;соответствии с&nbsp;Политикой конфиденциальности.</span>
       </label>
       <span class="field__error" id="consent-err" data-for="consent" aria-live="polite"></span>
 
@@ -994,10 +994,27 @@
     </div>
   </div>
   <div class="container footer__legal">
-    <span>© Алексей Бурыкин</span>
-    <span>Работа конфиденциальна. Разговор остаётся между нами.</span>
+    <span>© Алексей Бурыкин, 2025–2026</span>
+    <span class="footer__operator">
+      Оператор персональных данных: ООО «Белый Город» · ИНН&nbsp;7810922302 · ОГРН&nbsp;1217800103223<br/>
+      196006, г.&nbsp;Санкт-Петербург, Лиговский пр-т, д.&nbsp;256, корп.&nbsp;3, стр.&nbsp;1, пом.&nbsp;1-Н, оф.&nbsp;17
+    </span>
+    <span class="footer__legal-links">
+      <a href="privacy.html">Политика конфиденциальности</a>
+      <span aria-hidden="true">·</span>
+      <a href="privacy.html#cookies">Использование cookies</a>
+    </span>
   </div>
 </footer>
+
+<!-- Cookie consent banner -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Использование cookies" aria-live="polite">
+  <p class="cookie-banner__text">
+    Сайт использует технические cookies для корректной работы. Продолжая использование сайта, вы соглашаетесь с их применением.
+    <a href="privacy.html#cookies" class="cookie-banner__link">Подробнее</a>
+  </p>
+  <button class="cookie-banner__btn" type="button" id="cookieAccept" aria-label="Принять и закрыть уведомление">Принять</button>
+</div>
 
 <script src="script.js" defer></script>
 </body>

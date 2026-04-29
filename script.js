@@ -452,4 +452,36 @@
     });
     updateQuiz();
   }
+
+  // --- cookie consent banner -------------------------------------------
+  var cookieBanner = document.getElementById('cookieBanner');
+  var cookieAccept = document.getElementById('cookieAccept');
+  if (cookieBanner) {
+    var COOKIE_KEY = 'cookie_consent';
+    function setCookieConsentFlag() {
+      try {
+        localStorage.setItem(COOKIE_KEY, '1');
+      } catch(e) {}
+      try {
+        var d = new Date();
+        d.setFullYear(d.getFullYear() + 1);
+        document.cookie = COOKIE_KEY + '=1; expires=' + d.toUTCString() + '; path=/; SameSite=Lax';
+      } catch(e) {}
+    }
+    function hasConsented() {
+      try { if (localStorage.getItem(COOKIE_KEY)) return true; } catch(e) {}
+      try { if (document.cookie.indexOf(COOKIE_KEY + '=1') !== -1) return true; } catch(e) {}
+      return false;
+    }
+    if (!hasConsented()) {
+      cookieBanner.hidden = false;
+    }
+    if (cookieAccept) {
+      cookieAccept.addEventListener('click', function () {
+        setCookieConsentFlag();
+        cookieBanner.classList.add('cookie-banner--hide');
+        setTimeout(function () { cookieBanner.hidden = true; }, 420);
+      });
+    }
+  }
 })();

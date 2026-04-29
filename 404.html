@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="robots" content="noindex,nofollow" />
+<title>404 — Страница не найдена · Алексей Бурыкин</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23102E4A'/%3E%3Crect x='6' y='6' width='20' height='20' rx='4' fill='none' stroke='%23FFF7E6' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23F5EBD1'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .not-found {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: clamp(40px,10vw,100px) clamp(20px,5vw,40px);
+    position: relative;
+  }
+  .not-found__bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background:
+      radial-gradient(900px 600px at 50% 30%, rgba(255,247,230,.05), transparent 60%);
+    pointer-events: none;
+  }
+  .not-found__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 520px;
+  }
+  .not-found__code {
+    font-family: var(--ff-serif);
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(88px,18vw,140px);
+    line-height: 1;
+    color: var(--accent);
+    margin: 0 0 8px;
+    letter-spacing: -.04em;
+    opacity: .15;
+    display: block;
+  }
+  .not-found__title {
+    font-family: var(--ff-serif);
+    font-weight: 400;
+    font-size: clamp(24px,4vw,36px);
+    color: var(--text);
+    margin: 0 0 16px;
+    letter-spacing: -.02em;
+    line-height: 1.2;
+  }
+  .not-found__text {
+    font-size: 16px;
+    color: var(--text-dim);
+    line-height: 1.65;
+    margin: 0 0 40px;
+    max-width: 40ch;
+  }
+  .not-found__actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .not-found__compass {
+    display: block;
+    margin: 0 auto 32px;
+    opacity: .3;
+  }
+</style>
+</head>
+<body>
+
+<div class="not-found">
+  <div class="not-found__bg" aria-hidden="true"></div>
+  <div class="not-found__inner">
+
+    <svg class="not-found__compass" width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+      <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      <circle cx="32" cy="32" r="2.5" fill="currentColor"/>
+      <line x1="32" y1="8" x2="32" y2="18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      <line x1="32" y1="46" x2="32" y2="56" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".4"/>
+      <line x1="8" y1="32" x2="18" y2="32" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".4"/>
+      <line x1="46" y1="32" x2="56" y2="32" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      <polygon points="32,10 29,22 32,20 35,22" fill="currentColor"/>
+    </svg>
+
+    <span class="not-found__code" aria-hidden="true">404</span>
+    <h1 class="not-found__title">Страница не&nbsp;найдена</h1>
+    <p class="not-found__text">
+      Возможно, адрес изменился или страница была удалена. Вернитесь на&nbsp;главную&nbsp;— там всё нужное.
+    </p>
+    <div class="not-found__actions">
+      <a class="btn btn--primary btn--lg" href="index.html">На&nbsp;главную</a>
+      <a class="btn btn--outline btn--lg" href="index.html#contact">Записаться на&nbsp;сессию</a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
