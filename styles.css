@@ -518,7 +518,7 @@ h1, h2, h3, p, li, dt, dd, a, span {
   display: inline-block;
   transform: translateY(110%);
   animation: wordUp 1s var(--ease) forwards;
-  animation-delay: calc(var(--i, 0) * 60ms + 120ms);
+  animation-delay: calc(var(--i, 0) * 36ms + 80ms);
   will-change: transform;
 }
 @keyframes wordUp {
@@ -2242,7 +2242,7 @@ html, body { max-width: 100%; overflow-x: clip; }
 
   .hero { padding: clamp(104px, 18vw, 140px) 0 clamp(56px, 10vw, 88px); }
   .hero__bg { opacity: .4; }
-  .hero__title { font-size: clamp(34px, 6.8vw, 52px); max-width: none; }
+  .hero__title { font-size: clamp(32px, 6.2vw, 48px); max-width: none; }
   .hero__lede { font-size: 17px; margin-bottom: 32px; }
   .hero__cta { margin-bottom: 44px; }
   .hero__stats { grid-template-columns: repeat(3, 1fr); gap: 12px; padding-top: 24px; }
@@ -2288,7 +2288,7 @@ html, body { max-width: 100%; overflow-x: clip; }
   .hero__bg { display: none; }
   .hero__content { text-align: left; }
   .hero__title {
-    font-size: clamp(30px, 8.8vw, 40px);
+    font-size: clamp(28px, 8vw, 37px);
     line-height: 1.08;
     letter-spacing: -.02em;
     margin: 18px 0 20px;
