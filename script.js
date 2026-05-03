@@ -190,6 +190,7 @@
   var form = document.getElementById('contactForm');
   var note = document.getElementById('formNote');
   var submitBtn = document.getElementById('submitBtn');
+  var contactEmail = 'bural1975@icloud.com';
 
   function fieldEl(name) { return form.querySelector('#' + name); }
   function errEl(name) { return form.querySelector('.field__error[data-for="' + name + '"]'); }
@@ -339,18 +340,40 @@
         return;
       }
 
-      // simulate submit — lock UI briefly
+      var nameVal = fieldEl('name').value.trim();
+      var emailVal = fieldEl('email').value.trim();
+      var phoneVal = fieldEl('phone').value.trim();
+      var noteVal = fieldEl('note') ? fieldEl('note').value.trim() : '';
+      var subject = 'Заявка на пробную ментор-сессию с сайта';
+      var body = [
+        'Здравствуйте, Алексей.',
+        '',
+        'Хочу записаться на пробную ментор-сессию.',
+        '',
+        'Имя: ' + nameVal,
+        'Email: ' + emailVal,
+        'Телефон: ' + (phoneVal || 'не указан'),
+        '',
+        'Контекст:',
+        noteVal || 'не указан',
+        '',
+        'Согласие на обработку персональных данных дано через форму сайта.'
+      ].join('\n');
+      var mailto = 'mailto:' + contactEmail +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(body);
+
+      // Static GitHub Pages: no fake success. Open user's mail client instead.
       submitBtn.setAttribute('aria-busy', 'true');
       submitBtn.disabled = true;
-      setNote('', 'Отправляю…');
+      setNote('', 'Проверка пройдена. Открываю письмо — отправьте его из почтового клиента.');
 
       setTimeout(function () {
         submitBtn.removeAttribute('aria-busy');
         submitBtn.disabled = false;
-        setNote('success', 'Спасибо. Заявка принята — свяжусь с вами в течение рабочего дня. Если удобнее в Telegram, напишите: @Mbobr1975');
-        form.reset();
-        if (counter) counter.textContent = '0 / ' + (note2 ? (note2.getAttribute('maxlength') || 600) : 600);
-      }, 700);
+        setNote('success', 'Письмо подготовлено. Если почтовый клиент не открылся, напишите на ' + contactEmail + '.');
+        window.location.href = mailto;
+      }, 250);
     });
   }
 

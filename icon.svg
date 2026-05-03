@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Алексей Бурыкин">
+  <rect width="512" height="512" rx="96" fill="#102E4A"/>
+  <rect x="116" y="116" width="280" height="280" rx="46" fill="none" stroke="#FFF7E6" stroke-width="22"/>
+  <path d="M256 142 370 256 256 370 142 256Z" fill="none" stroke="#F5EBD1" stroke-width="12" opacity=".42"/>
+  <circle cx="256" cy="256" r="34" fill="#FFF7E6"/>
+</svg>
