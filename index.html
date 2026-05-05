@@ -48,10 +48,7 @@
 <link rel="apple-touch-icon" href="img/alex-01.png" />
 
 <!-- Fonts — preconnect + preload display-swap -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="preload" as="image" href="img/0B8AD026-F28C-46E5-82D7-7CE476886422_1_105_c.jpeg" fetchpriority="high" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 
 <!-- Structured data: Person + ProfessionalService + FAQ + Website -->
@@ -69,7 +66,6 @@
       "description": "Практикующий управленец с опытом 25+ лет. Диагностика управленческих затыков, перестройка процессов, контур контроля, работа с управленческой командой.",
       "image": "https://compass-direct.ru/img/0B8AD026-F28C-46E5-82D7-7CE476886422_1_105_c.jpeg",
       "url": "https://compass-direct.ru/",
-      "email": "mailto:bural1975@icloud.com",
       "taxID": "250804958707",
       "identifier": [
         {
@@ -91,7 +87,6 @@
       "areaServed": "RU",
       "serviceType": "Management consulting, executive mentoring, anti-crisis operations",
       "url": "https://compass-direct.ru/",
-      "email": "mailto:bural1975@icloud.com",
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "RU",
@@ -800,60 +795,37 @@
       </p>
     </header>
 
-    <form class="quiz" id="quizForm" novalidate aria-label="Управленческий чек из 3 вопросов">
-      <fieldset class="quiz__step" data-step="1">
-        <legend class="quiz__legend">
+    <div class="quiz quiz--static" aria-label="Управленческий чек из 3 вопросов">
+      <article class="quiz__step">
+        <div class="quiz__legend">
           <span class="quiz__step-num">01 / 03</span>
-          <span class="quiz__q">Если вы на&nbsp;2&nbsp;недели полностью выпадете из&nbsp;операционной деятельности, что произойдёт?</span>
-        </legend>
-        <div class="quiz__options">
-          <label class="quiz__opt"><input type="radio" name="q1" value="Бизнес продолжит работать почти без изменений"><span>Бизнес продолжит работать почти без&nbsp;изменений</span></label>
-          <label class="quiz__opt"><input type="radio" name="q1" value="Замедлится, но не критично"><span>Замедлится, но&nbsp;не&nbsp;критично</span></label>
-          <label class="quiz__opt"><input type="radio" name="q1" value="Ключевые решения остановятся"><span>Ключевые решения остановятся</span></label>
-          <label class="quiz__opt"><input type="radio" name="q1" value="Начнётся управленческий хаос"><span>Начнётся управленческий хаос</span></label>
-          <label class="quiz__opt"><input type="radio" name="q1" value="Свой вариант"><span>Свой вариант</span></label>
+          <h3 class="quiz__q">Если вы на&nbsp;2&nbsp;недели полностью выпадете из&nbsp;операционной деятельности, что произойдёт?</h3>
         </div>
-      </fieldset>
+        <p>Бизнес продолжит работать почти без изменений, замедлится или ключевые решения остановятся?</p>
+      </article>
 
-      <fieldset class="quiz__step" data-step="2">
-        <legend class="quiz__legend">
+      <article class="quiz__step">
+        <div class="quiz__legend">
           <span class="quiz__step-num">02 / 03</span>
-          <span class="quiz__q">Когда вы делегируете задачу, чаще всего:</span>
-        </legend>
-        <div class="quiz__options">
-          <label class="quiz__opt"><input type="radio" name="q2" value="Её выполняют и берут ответственность"><span>Её выполняют и&nbsp;берут ответственность</span></label>
-          <label class="quiz__opt"><input type="radio" name="q2" value="Её выполняют, но контроль остаётся за вами"><span>Её выполняют, но&nbsp;контроль остаётся за&nbsp;вами</span></label>
-          <label class="quiz__opt"><input type="radio" name="q2" value="Её возвращают вам с уточнениями и сомнениями"><span>Её возвращают вам с&nbsp;уточнениями и&nbsp;сомнениями</span></label>
-          <label class="quiz__opt"><input type="radio" name="q2" value="В итоге вы делаете её сами"><span>В&nbsp;итоге вы делаете её&nbsp;сами</span></label>
+          <h3 class="quiz__q">Когда вы делегируете задачу, где остаётся ответственность?</h3>
         </div>
-      </fieldset>
+        <p>У команды, у конкретного руководителя или всё равно возвращается к вам?</p>
+      </article>
 
-      <fieldset class="quiz__step" data-step="3">
-        <legend class="quiz__legend">
+      <article class="quiz__step">
+        <div class="quiz__legend">
           <span class="quiz__step-num">03 / 03</span>
-          <span class="quiz__q">Что сейчас вызывает наибольшее напряжение?</span>
-        </legend>
-        <div class="quiz__options">
-          <label class="quiz__opt"><input type="radio" name="q3" value="Перегрузка операционкой"><span>Перегрузка операционкой</span></label>
-          <label class="quiz__opt"><input type="radio" name="q3" value="Слабая управленческая команда"><span>Слабая управленческая команда</span></label>
-          <label class="quiz__opt"><input type="radio" name="q3" value="Неясность моей роли дальше"><span>Неясность моей роли дальше</span></label>
-          <label class="quiz__opt"><input type="radio" name="q3" value="Отсутствие системного роста"><span>Отсутствие системного роста</span></label>
+          <h3 class="quiz__q">Что сейчас создаёт наибольшее напряжение?</h3>
         </div>
-      </fieldset>
+        <p>Операционка, слабая управленческая команда, неясность вашей роли или отсутствие системного роста?</p>
+      </article>
 
-      <div class="quiz__result" id="quizResult" aria-live="polite" hidden>
-        <div class="quiz__result-card">
-          <span class="eyebrow">Почти готово</span>
-          <h3>Осталось оставить контакты, чтобы обсудить ваш управленческий затык.</h3>
-          <a class="btn btn--primary btn--lg" href="#contact">Перейти к&nbsp;форме записи</a>
-        </div>
+      <div class="quiz__result-card">
+        <span class="eyebrow">Если 2–3 вопроса попали в точку</span>
+        <h3>Напишите напрямую — разберём, где именно находится управленческая проблема.</h3>
+        <a class="btn btn--primary btn--lg" href="#contact">Выбрать способ связи</a>
       </div>
-
-      <div class="quiz__progress" aria-hidden="true">
-        <i class="quiz__progress-bar" style="--p:0%"></i>
-        <span class="quiz__progress-label">Заполнено <b>0</b>&nbsp;/&nbsp;3</span>
-      </div>
-    </form>
+    </div>
   </div>
 </section>
 
@@ -896,12 +868,12 @@
 
 <!-- CONTACT -->
 <section class="section section--contact" id="contact">
-  <div class="container contact-row">
+  <div class="container contact-row contact-row--simple">
     <div class="contact-copy">
       <span class="eyebrow">Пробная ментор-сессия · 0&nbsp;₽</span>
       <h2 class="contact-title">Готовы&nbsp;начать?</h2>
       <p class="contact-lead">
-        Онлайн · 30&nbsp;минут · 0&nbsp;₽. Без&nbsp;обязательств продолжать. Вы&nbsp;получаете формулировку ключевого управленческого затыка и&nbsp;карту первых решений.
+        Онлайн · 30&nbsp;минут · 0&nbsp;₽. Без&nbsp;форм на&nbsp;сайте и&nbsp;без&nbsp;обязательств продолжать. Напишите удобным способом&nbsp;— обсудим вашу управленческую ситуацию напрямую.
       </p>
       <ul class="contact-list" role="list">
         <li>Разделение личного, командного и&nbsp;системного уровней</li>
@@ -909,88 +881,22 @@
         <li>Понимание формата дальнейшей работы, если он&nbsp;нужен</li>
       </ul>
       <div class="contact-direct">
-        <span>Предпочитаете написать напрямую?</span>
-        <a class="btn btn--outline" href="mailto:bural1975@icloud.com">Email</a>
-        <a class="btn btn--outline" href="https://t.me/+ueCIK215zyQzYTYy" target="_blank" rel="noopener">Telegram-канал</a>
+        <span>Напишите напрямую:</span>
+        <a class="btn btn--primary" href="https://t.me/Mbobr1975" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn btn--outline" href="https://max.ru/" target="_blank" rel="noopener">MAX</a>
       </div>
     </div>
 
-    <form class="contact-form" id="contactForm" novalidate autocomplete="on" aria-labelledby="contactFormTitle">
-      <h3 id="contactFormTitle" class="visually-hidden">Форма записи на диагностическую сессию</h3>
-
-      <div class="field">
-        <label for="name">Имя</label>
-        <input
-          id="name" name="name" type="text"
-          autocomplete="name"
-          required minlength="2" maxlength="80"
-          spellcheck="false"
-          aria-required="true"
-          aria-describedby="name-err"
-          placeholder="Как к вам обращаться"
-        />
-        <span class="field__error" id="name-err" data-for="name" aria-live="polite"></span>
+    <aside class="contact-panel" aria-label="Как записаться">
+      <span class="contact-panel__kicker">Без формы</span>
+      <h3>Коротко напишите, что происходит в&nbsp;бизнесе</h3>
+      <p>Достаточно 2–3&nbsp;предложений: где сейчас проблема, кто принимает решения, что хотите разобрать на&nbsp;первой встрече.</p>
+      <div class="contact-actions">
+        <a class="btn btn--primary btn--lg" href="https://t.me/Mbobr1975" target="_blank" rel="noopener">Написать в&nbsp;Telegram</a>
+        <a class="btn btn--outline btn--lg" href="https://max.ru/" target="_blank" rel="noopener">Открыть MAX</a>
       </div>
-
-      <div class="field">
-        <label for="email">Электронная почта</label>
-        <input
-          id="email" name="email" type="email"
-          autocomplete="email"
-          required maxlength="120"
-          spellcheck="false"
-          autocapitalize="off"
-          aria-required="true"
-          aria-describedby="email-err"
-          placeholder="name@company.ru"
-        />
-        <span class="field__error" id="email-err" data-for="email" aria-live="polite"></span>
-      </div>
-
-      <div class="field">
-        <label for="phone">Телефон <span class="field__hint-inline">— не&nbsp;обязательно</span></label>
-        <input
-          id="phone" name="phone" type="tel"
-          autocomplete="tel"
-          inputmode="numeric"
-          maxlength="18"
-          pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
-          aria-describedby="phone-err phone-hint"
-          placeholder="+7 (___) ___-__-__"
-        />
-        <span class="field__hint" id="phone-hint">формат&nbsp;РФ</span>
-        <span class="field__error" id="phone-err" data-for="phone" aria-live="polite"></span>
-      </div>
-
-      <div class="field">
-        <label for="note">Короткий контекст <span class="field__hint-inline">— по&nbsp;желанию</span></label>
-        <textarea
-          id="note" name="note"
-          rows="3"
-          maxlength="600"
-          aria-describedby="note-hint"
-          placeholder="В&nbsp;двух строках: что&nbsp;происходит в&nbsp;бизнесе сейчас"
-        ></textarea>
-        <span class="field__hint" id="note-hint" data-counter-for="note">0&nbsp;/&nbsp;600</span>
-      </div>
-
-      <!-- honeypot: invisible to humans, catches bots -->
-      <div class="field field--honeypot" aria-hidden="true">
-        <label for="website">Сайт (не&nbsp;заполнять)</label>
-        <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
-      </div>
-
-      <label class="field field--check">
-        <input id="consent" name="consent" type="checkbox" required aria-required="true" aria-describedby="consent-err" />
-        <span>Согласен(-на) на&nbsp;<a href="consent.html" target="_blank" rel="noopener" class="form-link">обработку персональных данных</a> и&nbsp;ознакомлен(-а) с&nbsp;<a href="privacy.html" target="_blank" rel="noopener" class="form-link">Политикой обработки персональных данных</a>.</span>
-      </label>
-      <span class="field__error" id="consent-err" data-for="consent" aria-live="polite"></span>
-
-      <button class="btn btn--primary btn--lg btn--block" type="submit" id="submitBtn">
-        <span>Записаться на&nbsp;сессию</span>
-      </button>
-      <p class="contact-form__note" role="status" aria-live="polite" id="formNote"></p>
-    </form>
+      <p class="contact-panel__note">Для прямого перехода в&nbsp;MAX нужна ссылка на&nbsp;профиль. Пока кнопка ведёт на официальный сайт MAX.</p>
+    </aside>
   </div>
 </section>
 
@@ -1018,37 +924,23 @@
       <a href="#contact">Записаться</a>
     </nav>
     <div class="footer__contact">
-      <a href="mailto:bural1975@icloud.com">Email&nbsp;→</a>
+      <a href="https://t.me/Mbobr1975" target="_blank" rel="noopener">Telegram&nbsp;→</a>
+      <a href="https://max.ru/" target="_blank" rel="noopener">MAX&nbsp;→</a>
       <a href="https://t.me/+ueCIK215zyQzYTYy" target="_blank" rel="noopener">Канал&nbsp;→</a>
     </div>
   </div>
   <div class="container footer__legal">
     <span>© Алексей Бурыкин, 2025–2026</span>
     <span class="footer__operator">
-      Оператор персональных данных: ИП Бурыкин Алексей Владимирович · ИНН&nbsp;250804958707 · ОГРНИП&nbsp;324784700387887<br/>
+      Исполнитель: ИП Бурыкин Алексей Владимирович · ИНН&nbsp;250804958707 · ОГРНИП&nbsp;324784700387887<br/>
       Россия, г.&nbsp;Санкт-Петербург, пр-кт Новоизмайловский, д.&nbsp;30, к.&nbsp;2, кв.&nbsp;55<br/>
       Обработка обращений: ежедневно, 10:00–19:00&nbsp;МСК
     </span>
     <span class="footer__legal-links">
-      <a href="privacy.html">Политика ПДн</a>
-      <span aria-hidden="true">·</span>
-      <a href="consent.html">Согласие ПДн</a>
-      <span aria-hidden="true">·</span>
-      <a href="privacy.html#cookies">Использование cookies</a>
-      <span aria-hidden="true">·</span>
       <a href="requisites.html">Сведения об исполнителе</a>
     </span>
   </div>
 </footer>
-
-<!-- Cookie consent banner -->
-<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Использование cookies" aria-live="polite">
-  <p class="cookie-banner__text">
-    Сайт использует технические cookies для корректной работы. Продолжая использование сайта, вы соглашаетесь с их применением.
-    <a href="privacy.html#cookies" class="cookie-banner__link">Подробнее</a>
-  </p>
-  <button class="cookie-banner__btn" type="button" id="cookieAccept" aria-label="Принять и закрыть уведомление">Принять</button>
-</div>
 
 <script src="script.js" defer></script>
 </body>
