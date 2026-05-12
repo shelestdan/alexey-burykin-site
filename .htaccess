@@ -1,0 +1,31 @@
+DirectoryIndex index.html
+AddDefaultCharset UTF-8
+Options -Indexes
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{HTTP_HOST} ^www\.compass-direct\.ru$ [NC]
+  RewriteRule ^(.*)$ https://compass-direct.ru/$1 [R=301,L]
+
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP_HOST} ^compass-direct\.ru$ [NC]
+  RewriteRule ^(.*)$ https://compass-direct.ru/$1 [R=301,L]
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresByType application/manifest+json "access plus 7 days"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
