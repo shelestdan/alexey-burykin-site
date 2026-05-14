@@ -1650,7 +1650,7 @@ h1, h2, h3, p, li, dt, dd, a, span {
 }
 .footer__contact a:hover { color: var(--accent-2); transform: translateX(2px); }
 .footer__legal {
-  display: flex; justify-content: space-between; align-items: flex-start; gap: 12px 24px; flex-wrap: wrap;
+  display: flex; justify-content: space-between; align-items: center; gap: 12px 24px; flex-wrap: wrap;
   padding-top: 24px;
   color: var(--text-mute);
   font-size: 12.5px;
@@ -2182,14 +2182,6 @@ html, body { max-width: 100%; overflow-x: clip; }
   .btn--primary:hover { transform: none; }
 }
 
-/* =======================================================
-   FOOTER — legal operator info
-   ======================================================= */
-.footer__operator {
-  font-size: 12px;
-  color: var(--text-mute);
-  line-height: 1.6;
-}
 .footer__legal-links {
   display: flex;
   flex-wrap: wrap;
