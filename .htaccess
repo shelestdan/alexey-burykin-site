@@ -8,7 +8,7 @@ ErrorDocument 404 /404.html
   RewriteEngine On
 
   RewriteCond %{HTTP_HOST} ^www\.compass-direct\.ru$ [NC]
-  RewriteRule ^(.*)$ https://compass-direct.ru/$1 [R=301,L]
+  RewriteRule ^(.*)$ http://compass-direct.ru/$1 [R=301,L]
 </IfModule>
 
 <IfModule mod_expires.c>
