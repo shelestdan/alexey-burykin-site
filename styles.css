@@ -1861,12 +1861,11 @@ h1, h2, h3, p, li, dt, dd, a, span {
   padding: 22px 0;
   border-bottom: 1px solid var(--line);
   position: relative;
-  transition: padding-left .4s var(--ease), background .4s var(--ease);
+  transition: background .4s var(--ease);
   cursor: default;
 }
 .about-principle:last-child { border-bottom: 0; }
 .about-principle:hover {
-  padding-left: 14px;
   background: linear-gradient(90deg, rgba(255,247,230,.04), transparent 60%);
 }
 .about-principle::before {
