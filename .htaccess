@@ -4,13 +4,6 @@ Options -Indexes
 
 ErrorDocument 404 /404.html
 
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-
-  RewriteCond %{HTTP_HOST} ^www\.compass-direct\.ru$ [NC]
-  RewriteRule ^(.*)$ http://compass-direct.ru/$1 [R=301,L]
-</IfModule>
-
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType text/css "access plus 7 days"
